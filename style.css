@@ -37,12 +37,12 @@ small, .small { font-size: 16px; }
 
 @media screen and (min-width: 640px) {
   h1, .h1 { font-size: 35px; }
-  h2, .h2 { font-size: 24px; text-transform: uppercase; }
+  h2, .h2 { font-size: 21px; text-transform: uppercase; }
   p, .p   { font-size: 18px;
             color: #555657; }
 }
 
-a { color: #405863; text-decoration: none; }
+a { color: #405863; text-decoration: none; font-weight: 400; }
 a:hover { color: #1b94ab; text-decoration: underline; font-weight: 400;}
 h1 a { color: #333;}
 
