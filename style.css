@@ -42,8 +42,8 @@ small, .small { font-size: 16px; }
             color: #555657; }
 }
 
-a { color: #405863; text-decoration: none; font-weight: 400; }
-a:hover { color: #1b94ab; text-decoration: underline; font-weight: 400;}
+a { color: #405863; text-decoration: none; }
+a:hover { color: #1b94ab;}
 h1 a { color: #333;}
 
 .wrap {
