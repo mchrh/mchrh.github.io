@@ -39,7 +39,7 @@ p, .p {
 small, .small { font-size: 16px; }
 
 @media screen and (min-width: 640px) {
-  h1, .h1 { font-size: 48px; }
+  h1, .h1 { font-size: 48px; font-weight: 400; }
   h2, .h2 { font-size: 32px; }
   p, .p   { font-size: 20px; }
 }
