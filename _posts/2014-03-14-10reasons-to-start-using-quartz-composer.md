@@ -5,9 +5,9 @@ title: "Why you should start using Quartz Composer"
 
 I've recently started looking for the best way to prototype and animate interactions for web & iOS designs. Nowadays, "just" designing isn't enough, having nice, sleek animations and more importantly definining the right interactions is what really matters. 
 I tried a bunch of tools (Marvel, flinto, FramerJS), but I ended casting my choice to the Origami / Quartz Composer tandem.
-**What is Quartz Composer and Origami ?**
+#What is Quartz Composer and Origami ?
 Origami is a free toolkit for Quartz Composer – created by the Facebook Design team. Some call Quartz a “visual programming language” or “patches and noodles.” Origami allegedly makes using Quartz easier. 
-**Reasons to choose Origami and Quartz Composer over FramerJS**
+#Reasons to choose Origami and Quartz Composer over FramerJS
 
 + QC has immediate visual feedback. You can get close with Framer by using auto refresh on save (for example with Cactus) but it's not the same.
 
