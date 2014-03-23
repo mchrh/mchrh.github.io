@@ -149,7 +149,8 @@ header nav {
     .testimony .profile h3 {
       font-family: "aleoregular";
       color: #a6a6a6;
-      letter-spacing: -2px; }
+      letter-spacing: -2px;
+      margin-top: 20px; }
     .testimony .profile h4 {
       font-family: "aleolightitalic";
       color: #a6a6a6;
