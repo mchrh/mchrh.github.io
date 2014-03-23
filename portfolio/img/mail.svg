@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M30,58.913C14.058,58.913,1.087,45.942,1.087,30S14.058,1.087,30,1.087
+		c15.942,0,28.913,12.97,28.913,28.913S45.942,58.913,30,58.913z M30,2.498C14.835,2.498,2.498,14.835,2.498,30
+		S14.835,57.502,30,57.502S57.502,45.165,57.502,30S45.165,2.498,30,2.498z"/>
+</g>
+<g id="Envelope">
+	<g>
+		<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M44.132,18.224H15.868c-1.301,0-2.355,1.055-2.355,2.355v18.842
+			c0,1.301,1.054,2.355,2.355,2.355h28.263c1.301,0,2.355-1.055,2.355-2.355V20.579C46.487,19.278,45.432,18.224,44.132,18.224z
+			 M41.776,20.579L30,30l-11.776-9.421H41.776z M44.132,39.421H15.868V22.934L30,34.711l14.132-11.776V39.421z"/>
+	</g>
+</g>
+</svg>
