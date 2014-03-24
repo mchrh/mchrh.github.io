@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #313841; }
+
+header {
+  text-align: center; }
+  header img {
+    width: 20%;
+    height: auto; }
+
+#fields {
+  text-align: center;
+  padding-top: 1%; }
+  #fields input[type=submit] {
+    background: #7dcee3;
+    border-radius: 15px;
+    width: 10%;
+    font-size: 17px;
+    height: 3em;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 50px; }
+  #fields form input {
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+    width: 25%;
+    height: 4em;
+    outline: 0;
+    overflow: hidden;
+    overflow-y: scroll; }
+
+.button {
+  padding-top: 3%; }
+
+footer {
+  text-align: center; }
+  footer h4 {
+    color: #ffffff;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    padding-top: 9%; }
+  footer a {
+    color: #ffffff;
+    text-decoration: underline; }
+
+@media screen and (max-width: 640px) {
+  header {
+    text-align: center; }
+    header img {
+      width: 40%;
+      height: auto; }
+
+  #fields {
+    text-align: center;
+    padding-top: 1%; }
+    #fields input[type=submit] {
+      background-color: #7dcee3;
+      border-radius: 15px;
+      width: 35%;
+      border: 0;
+      margin-bottom: 50px;
+      -webkit-appearance: none; }
+    #fields form input {
+      border-radius: 5px;
+      border: 1px solid #bebebe;
+      width: 65%;
+      outline: 0;
+      margin-bottom: 2%;
+      overflow: hidden;
+      overflow-y: hiden; }
+
+  footer {
+    text-align: center; }
+    footer h4 {
+      color: #ffffff;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      padding-top: 35%; } }
+@media screen and (min-width: 700px) and (max-width: 1140px) {
+  header {
+    text-align: center; }
+    header img {
+      width: 40%;
+      height: auto; }
+
+  #fields {
+    text-align: center;
+    padding-top: 0; }
+    #fields input[type=submit] {
+      background-color: #7dcee3;
+      border-radius: 15px;
+      width: 35%;
+      border: 0;
+      margin-bottom: 50px;
+      -webkit-appearance: none; }
+    #fields form input {
+      border-radius: 5px;
+      border: 1px solid #bebebe;
+      width: 65%;
+      outline: 0;
+      margin-bottom: 1%;
+      overflow: hidden;
+      overflow-y: hiden; }
+
+  footer {
+    text-align: center; }
+    footer h4 {
+      color: #ffffff;
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      padding-top: 4%; } }

@@ -1,0 +1,145 @@
+*{margin:0;padding:0}
+
+// declaring variables 
+$font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$bg: #313841;
+$txt-color: #bebebe;
+$btn-color: #7dcee3;
+
+// styling
+	// general styling
+body {
+	background-color: $bg;
+}
+	// header styling (logo)
+header {
+	text-align: center;	
+	img {
+		width: 20%;
+		height: auto;
+	}
+}
+	// fields styiling (inputs)
+#fields {
+	text-align: center;
+	padding-top: 1%;
+	input[type=submit] {
+		background: $btn-color;
+		border-radius: 15px;
+		width: 10%;
+		font-size: 17px;
+		height: 3em;
+		border: 0;
+		cursor: pointer;
+		color: #fff;
+		margin-bottom: 50px;
+		}
+		form input {
+			border-radius: 5px;
+			border: 1px solid $txt-color;
+			width: 25%;
+			height: 4em;
+			outline: 0;
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+	}
+		// button (confirmation)
+.button {
+	padding-top: 3%;
+}
+	// footer styling (credits + copyright)
+footer {
+	text-align: center;
+	h4 {
+		color: #ffffff;
+		font-family: $font;
+		font-weight: 400;
+		padding-top: 9%;
+	}
+	a {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+}
+// responsive design for mobile phones
+@media screen and (max-width: 640px) {
+	header {
+		text-align: center;
+		img {
+			width: 40%;
+			height: auto;
+		}
+	}
+	#fields {
+		text-align: center;
+		padding-top: 1%;
+		input[type=submit] {
+			background-color: $btn-color;
+			border-radius: 15px;
+			width: 35%;
+			border: 0;
+			margin-bottom: 50px;
+			-webkit-appearance: none;
+		}
+		form input {
+			border-radius: 5px;
+			border: 1px solid $txt-color;
+			width: 65%;
+			outline: 0;
+			margin-bottom: 2%;
+			overflow: hidden;
+			overflow-y: hiden;
+		}
+	}
+	footer {
+		text-align: center;
+		h4 {
+			color: #ffffff;
+			font-family: $font;
+			font-weight: 400;
+			padding-top: 35%;
+		}
+	}
+}
+// responsive for tablets 
+@media screen and (min-width: 700px) and (max-width: 1140px) {
+	header {
+		text-align: center;
+		img {
+			width: 40%;
+			height: auto;
+		}
+	}
+	#fields {
+		text-align: center;
+		padding-top: 0;
+		input[type=submit] {
+			background-color: $btn-color;
+			border-radius: 15px;
+			width: 35%;
+			border: 0;
+			margin-bottom: 50px;
+			-webkit-appearance: none;
+		}
+		form input {
+			border-radius: 5px;
+			border: 1px solid $txt-color;
+			width: 65%;
+			outline: 0;
+			margin-bottom: 1%;
+			overflow: hidden;
+			overflow-y: hiden;
+		}
+	}
+	footer {
+		text-align: center;
+		h4 {
+			color: #ffffff;
+			font-family: $font;
+			font-weight: 400;
+			padding-top: 4%;
+		}
+	}
+
+}

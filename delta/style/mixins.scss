@@ -1,0 +1,40 @@
+// boder radius (rectangles).
+@mixin rounded($radius) {
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		border-radius: $radius;
+}
+// for drop/inner shadows.
+@mixin shadow($x, $y, $blur_value, $color) {
+	-webkit-box-shadow: $x $y $blur_value $color;
+	-moz-box-shadow: $x $y $blur_value $color;
+	box-shadow: $x $y $blur_value $color;
+}
+@mixin shadow-inset($x, $y, $blur_value, $color) {
+	-webkit-box-shadow: inset $x $y $blur_value $color;
+	-moz-box-shadow: inset $x $y $blur_value $color;
+	box-shadow: inset $x $y $blur_value $color;
+
+}
+// some nice little transitions.
+@mixin transition($type) {
+	-webkit-transition: $type .5s ease;
+	-moz-transition: $type .5s ease;
+	-o-transition: $type .5s ease;
+	transition: $type .5s ease;
+}
+// box sizing.
+@mixin box-sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+// gradients.
+@mixin lin-gradient($source, $destination) {
+	background-image: -moz-linear-gradient($source, $destination);
+	background-image: o-linear-gradient($source, $destination);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $source), color-stop(1, $destination));
+	background-image: -webkit-linear-gradient($source, $destination);
+	background-image: ms-linear-gradient($source, $destination);
+	background-image: linear-gradient($source, $destination);
+}
