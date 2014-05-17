@@ -44,18 +44,3 @@
 	background: -moz-linear-gradient(right, $source, $destination); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, $source, $destination); /* Standard syntax */
 }
-// changing placeholder color.
-@mixin placeholder($color) {
-	::-webkit-input-placeholder { /* WebKit browsers */
-    color:    $color;
-		}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    $color;
-	}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    $color;
-	}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    $color;
-	}
-}

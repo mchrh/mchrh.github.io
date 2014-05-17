@@ -1,444 +1,115 @@
+/*
+* For the brave souls who get this far: You are the chosen ones,
+* the valiant knights of programming who toil away, without rest,
+* fixing our most awful code. To you, true saviors, kings of men,
+* I say this: never gonna give you up, never gonna let you down,
+* never gonna run around and desert you. Never gonna make you cry,
+* never gonna say goodbye. Never gonna tell a lie and hurt you.
+*/
+
 // bases values.
-*{margin:0; padding:0;}
-@import "mixins";
-// light font.
+* {
+  margin: 0;
+  padding: 0; }
+@import 'mixins';
+
+// Setting up Adam, a custom font used for headings. 
 @font-face {
-    font-family: 'aleoregular';
-    src: url('aleo-regular-webfont.eot');
-    src: url('aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('aleo-regular-webfont.woff') format('woff'),
-         url('aleo-regular-webfont.ttf') format('truetype'),
-         url('aleo-regular-webfont.svg#aleoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'adam';
+  src: url("fonts/adam-webfont.eot");
+  src: url("fonts/adam-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/adam-webfont.woff") format("woff"), url("fonts/adam-webfont.ttf") format("truetype"), url("fonts/adam-webfont.svg#adamregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-}
-@font-face {
-    font-family: 'aleolightitalic';
-    src: url('aleo-lightitalic-webfont.eot');
-    src: url('aleo-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('aleo-lightitalic-webfont.woff') format('woff'),
-         url('aleo-lightitalic-webfont.ttf') format('truetype'),
-         url('aleo-lightitalic-webfont.svg#aleolightitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  // setting up variables
+  $h1: 'adam';
+  $font: 'Merriweather', serif;
+  $text: #303839;
+  $title: #222222;
+  $link: #269DC5;
+  $hover: #48C6D4;
 
-}
-@font-face {
-    font-family: 'aleolight';
-    src: url('aleo-light-webfont.eot');
-    src: url('aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('aleo-light-webfont.woff') format('woff'),
-         url('aleo-light-webfont.ttf') format('truetype'),
-         url('aleo-light-webfont.svg#aleolight') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
+  // styling
+  body {
+    a {
+      @include transition;
+      color: $link;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $hover;
+      @include transition;
+    }
+  }
 
-// declaring variables 
-$red: #fe6969;
-$blue: #2a3440;
-$grey: #a6a6a6;
-$serif-light: 'aleolight';
-$serif-italic: 'aleolightitalic';
-$serif-regular: 'aleoregular';
-$sans: 'Source Sans Pro', sans-serif;
+  header {
+    background-image: url(header.jpg);
+    width:100%;
+    height: 550px;
+    background-size: cover;
+      .logo {
+        img {
+        margin-top: 40px;
+        margin-left: 80px;
+      }
+      }
+  }
+  .about {
+    margin-bottom: 100px;
+    h1 {
+      font-family: $h1;
+      color: $title;
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 60px;
+    }
+    .text {
+      font-family: $font;
+      font-family: 700;
+      letter-spacing: -0.5px;
+      color: $text;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+      line-height: 30px;
+        p {
+          -webkit-column-count: 2;
+        }
+    }
+  }
 
-.wrap {
-	width: 100%;
-	height: 100%;
-}
-// header styling.
-	header { 
-		.infos {
-			margin-left: 5%;
-			margin-top: 3%;
-		}
-		// h1 styling (name)
-		h1 {
-			font-family: $serif-light;
-			font-size: 1.4em;
-			color: $red;
-			margin-bottom: 10px;
-			letter-spacing: -2px;
-		}
-		// h2 styling (job)
-		h2 {
-			font-family: $serif-light;
-			font-size: 1.2em;
-			color: $grey;
-			letter-spacing: -2px;
+  // responsive design for phones.
+  @media screen and (min-width: 600px) and (max-width: 650px) {
+     header {
+    background-image: url(header.jpg);
+    width:auto;
+    height: 400px;
+    background-size: cover;
+      .logo {
+        img {
+        margin-top: 40px;
+        margin-left: 80px;
+      }
+      }
+  }
+  .about {
+    margin-bottom: 100px;
+    h1 {
+      font-family: $h1;
+      color: $title;
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 60px;
+    }
+    .text {
+      font-family: $font;
+      font-family: 700;
+      letter-spacing: -0.5px;
+      color: $text;
+      text-align: center;
+    }
+  }
+  }
 
-		}
-		nav {
-			text-align: right;
-			margin-top: -2%;
-			padding: 0px 60px 0 0;
-			font-family: $serif-light;
-				ul {
-					li {
-						list-style: none;
-						display: inline;
-						margin-left: 1%;
-							a {
-								color: $grey;
-								text-decoration: none;
-								font-size: 1.2em;
-								margin-right: 40px;
-							}
-							a:hover {
-								color: $red;
-								cursor: pointer;
-								@include transition;
-							}
-					}
-				}
-		}
-	}
-// splash text
-	#splash {
-		margin-top: 16%;
-		h1 {
-			font-family: $serif-light;
-			color: $blue;
-			font-size: 3.5em;
-			text-align: center;
-				span {
-					color: $red;
-				}
-		}
-		#chevron {
-			margin-top: 6%;
-			text-align: center;
-				img {
-					width: 70px;
-					height: 70px;
-				}
-		}
-	}
-
-// portfolio 
-	// presentation text
-	#portfolio {
-		margin-top: 15%;
-		text-align: center;
-		h1 {
-			font-family: $serif-regular;
-			color: $blue;
-			text-align: center;
-			letter-spacing: -2px;
-		}
-		h2 {
-			font-family: $serif-light;
-			color: $grey;
-			text-align: center;
-			letter-spacing: -2px;
-			margin-top: 2%;
-		}
-		// images
-		.images {
-			display: block;
-			text-align: center;
-			margin-top: 40px;
-		}
-		a { 
-			display: inline-block; 
-			width: 400px; 
-			height: 300px; 
-			position: relative;
-		}
-		img {
-			width: 400px;
-			height: 300px;
-			left: 0;
-			right: 0;
-		}
-
-    	span { 
-    		display: block;
-    		 position: absolute; 
-    		 top: 0; 
-    		 left: 0; 
-    		 width: 400px; 
-    		 height: 300px; 
-    		 opacity: 0; 
-    		 background: rgba(254,105,105,0.8); 
-    		 @include transition;
-    		}
-    	a:hover span { 
-    		opacity: 1; 
-    		-webkit-transition: all .5s ease; 
-    	}
-   		 p { 
-   		 	font-size: 20px; 
-   		 	font-family: $sans;
-   		 	color: #FFF; 
-   		 	text-align: center; 
-   		 	padding: 0 10px; 
-   		 	margin-top: 150px;
-   		 }
-
-	}
-// testimony
-	.testimony {
-		text-align: center;
-		h1 {
-			color: $blue;
-			font-family: $serif-regular;
-			letter-spacing: -2px;
-			margin-top: 4%;
-		}
-		.profile {
-			margin-top: 3%;	
-			h3 {
-				font-family: $serif-regular;
-				color: $grey;
-				letter-spacing: -2px;
-				margin-top: 20px;
-			}
-			h4 {
-				font-family: $serif-italic;
-				color: $grey;
-				letter-spacing: -2px;
-				font-size: 1.2em;
-				margin-top: 1%;
-			}
-
-			.dathing {
-				h5 {
-					font-family: $sans;
-					color: $grey;
-					margin-top: 1%;
-				}
-			}
-		}
-	}
-// footer 
-	footer {
-		background-color: $blue;
-		width: 100%;
-		height: 230px;
-		margin-top: 4%;
-		h6 {
-			color: #ffffff;
-			font-family: $serif-light;
-			letter-spacing: -2px;
-			font-size: 1em;
-			margin-left: 5%;
-			padding-top: 6%;
-		}
-		.social {
-			a {
-				opacity: 0.5;
-				margin-right: 10px;
-			}
-			a:hover {
-				opacity: 1;
-			}
-
-		}
-	}
-
-// responsive design for mobile phones.
-	@media screen and (max-width: 650px) {
-		// header styling.
-	header { 
-		.infos {
-			margin-left: 5%;
-			margin-top: 3%;
-		}
-		// h1 styling (name)
-		h1 {
-			font-family: $serif-light;
-			font-size: 1.4em;
-			color: $red;
-			text-align: center;
-			margin-bottom: 10px;
-			letter-spacing: -2px;
-		}
-		// h2 styling (job)
-		h2 {
-			font-family: $serif-light;
-			font-size: 1.2em;
-			text-align: center;
-			color: $grey;
-			letter-spacing: -2px;
-
-		}
-		nav {
-			text-align: right;
-			margin-top: -2%;
-			visibility: hidden;
-			padding: 0px 60px 0 0;
-			font-family: $serif-light;
-				ul {
-					li {
-						list-style: none;
-						display: inline;
-						margin-left: 1%;
-							a {
-								color: $grey;
-								text-decoration: none;
-								font-size: 1.2em;
-								margin-right: 40px;
-							}
-							a:hover {
-								color: $red;
-								cursor: pointer;
-								@include transition;
-							}
-					}
-				}
-		}
-	}
-// splash text
-	#splash {
-		margin-top: 16%;
-		h1 {
-			font-family: $serif-light;
-			color: $blue;
-			font-size: 3em;
-			text-align: center;
-				span {
-					color: $red;
-				}
-		}
-		#chevron {
-			margin-top: 6%;
-			text-align: center;
-			visibility: hidden;
-				img {
-					width: 70px;
-					height: 70px;
-				}
-		}
-	}
-
-// portfolio 
-	// presentation text
-	#portfolio {
-		margin-top: 15%;
-		text-align: center;
-		h1 {
-			font-family: $serif-regular;
-			color: $blue;
-			text-align: center;
-			letter-spacing: -2px;
-		}
-		h2 {
-			font-family: $serif-light;
-			color: $grey;
-			margin-left: 30px;
-			margin-right: 30px;
-			font-size: 1.3em;
-			text-align: center;
-			letter-spacing: -2px;
-			margin-top: 4%;
-		}
-		// images
-		.images {
-			display: block;
-			text-align: center;
-			margin-top: 40px;
-			margin-bottom: 40px;
-		}
-		a { 
-			display: inline-block; 
-			width: 400px; 
-			height: 300px; 
-			position: relative;
-		}
-		img {
-			width: 100%;
-			height: 100%;
-			left: 0;
-			right: 0;
-		}
-    	span { 
-    		display: block;
-    		 position: absolute; 
-    		 top: 0; 
-    		 left: 0; 
-    		 width: 100%; 
-    		 height: 100%; 
-    		 opacity: 0; 
-    		 background: rgba(254,105,105,0.8); 
-    		 @include transition;	 
-    		}
-    	a:hover span { 
-    		opacity: 1; 
-    		-webkit-transition: all .5s ease; 
-    	}
-   		 p { 
-   		 	font-size: 20px; 
-   		 	font-family: $sans;
-   		 	color: #FFF; 
-   		 	text-align: center; 
-   		 	padding: 0 10px; 
-   		 	margin-top: 150px;
-   		 }
-
-	}
-// testimony
-	.testimony {
-		text-align: center;
-		h1 {
-			color: $blue;
-			font-family: $serif-regular;
-			letter-spacing: -2px;
-			margin-top: 4%;
-			margin-bottom: 20px;
-		}
-		.profile {
-			margin-top: 3%;	
-			h3 {
-				font-family: $serif-regular;
-				color: $grey;
-				letter-spacing: -2px;
-				margin-top: 20px;
-			}
-			h4 {
-				font-family: $serif-italic;
-				color: $grey;
-				letter-spacing: -2px;
-				font-size: 1.2em;
-				margin-top: 4%;
-			}
-
-			.dathing {
-				h5 {
-					font-family: $sans;
-					color: $grey;
-					margin-top: 4%;
-				}
-			}
-		}
-	}
-// footer 
-	footer {
-		background-color: $blue;
-		width: 100%;
-		height: 150px;
-		margin-top: 4%;
-		h6 {
-			color: #ffffff;
-			font-family: $serif-light;
-			letter-spacing: -2px;
-			font-size: 1em;
-			text-align: center;
-			padding-top: 6%;
-		}
-		.social {
-			text-align: center;
-			a {
-				opacity: 0.5;
-			}
-			a:hover {
-				opacity: 1;
-			}
-
-		}
-	}
-
-	}

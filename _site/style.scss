@@ -1,8 +1,14 @@
-// base margin.
-body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
-button, input, select, textarea {
-  margin: 0;
-}
+// bases values.
+*{margin:0; padding:0;}
+@import 'mixins';
+
+// variables declarations 
+$green: #44dca1;
+$turq: #3cbfaf;
+$sans: 'Source Sans Pro', sans-serif;
+$txt: #EBEBEB;
+
+
 // basic styles for buttons, inputs and textareas.
 button, input, select, textarea {
   font-family: inherit;
@@ -14,6 +20,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 // body styling.
 body {
+  background: $turq;
+  background-image: linear-gradient($green, $turq);
+  background-repeat: no-repeat;
+  background-attachement: fixed;
+  height: 100%;
+  -webkit-font-smoothing: anti-aliased;
   color: #333;
   font-size: 100%;
   line-height: 1.75;
