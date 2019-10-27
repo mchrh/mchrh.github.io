@@ -1,11 +1,131 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Othmane Machrouh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal page of @mchrh">
+    <meta name="author" content="Othmane Machrouh">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			/* Edit this with your name or anything else */
+			content: 'OTHMANE';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">othmane</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">About</a></li>
+				        <li><a href="#achievements">Education</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
 
-{% for post in site.posts %}
-<article class="post">
-  <h1><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
-  {{ post.excerpt }}
-  <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">Read More &raquo;</a>
-</article>
-{% endfor %}
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Hi, I’m Othmane Machrouh.</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/pic_site.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>I live in<br>Paris, France.</h1>
+				</div>
+				<p>
+					I'm currently studying Mathematics at <a href="http://upmc.fr">Sorbonne Université</a> in Paris, France. I like maths, taking pictures and annoying my friends. They'll probably make fun of me because of this website. But it's fine, they're my friends.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+	<!-- Education -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Education.</h1>
+			<ul class="award-list list-flat">
+				<li>September 2017 - June 2020</li>
+				<li>Bachelor in Mathematics at Sorbonne Université.</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>September 2016 - June 2017</li>
+				<li>Classes préparatoires aux grandes écoles : Maths sup.</li>
+			</ul>
+			<ul class="award-list list-flat">
+				<li>June 2016</li>
+				<li>High school diploma - Mathematics</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Misc.</h1>
+			<ul class="skill-list list-flat">
+				<li>Non-tech skills</li>
+				<li>Mathematics</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Development/software skills</li>
+				<li>HTML / CSS / Python / Photoshop / Sketch / Lightroom / Final Cut Pro</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Hobbies</li>
+				<li>Photography and filmmaking	</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Quote -->
+	<div class="quote">
+		<div class="container text-centered">
+			<h1>ممنوع الوقوف</h1>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+			    	<p>Othmane Machrouh, 2020.</p>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["far northern sky", "your galaxy", "everywhere"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
